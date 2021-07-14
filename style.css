@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;700&family=Lexend+Deca&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    color: white;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.card-container{
+    display: flex;
+    width: 780px;
+    margin: auto;
+}
+
+.card{
+    padding: 3em;
+}
+
+.card h1{
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+}
+
+.card p{
+    line-height: 1.8em;
+    font-weight: lighter;
+}
+
+.card-one{
+    background: hsl(31, 77%, 52%);
+    border-radius: .5em 0 0 .5em;
+}
+
+.card-two{
+    background: hsl(184, 100%, 22%);
+}
+
+.card-three{
+    background: hsl(179, 100%, 13%);
+    border-radius:  0 .5em .5em 0;
+}
+
+.card-one .btn{
+    display: inline-block;
+    text-decoration: none;
+    color: hsl(31, 77%, 52%);
+    background: white;
+    border-radius: 5em;
+    padding: 1em 1.5em;
+    margin-top: 4em;
+}
+
+.card-one .btn:hover{
+    border: 2px solid white;
+    color: white;
+    background: hsl(31, 77%, 52%);
+}
+
+.card-two .btn{
+    display: inline-block;
+    text-decoration: none;
+    color: hsl(184, 100%, 22%);
+    background: white;
+    border-radius: 5em;
+    padding: 1em 1.5em;
+    margin-top: 4em;
+}
+
+.card-two .btn:hover{
+    border: 2px solid white;
+    color: white;
+    background: hsl(184, 100%, 22%);
+}
+
+.card-three .btn{
+    display: inline-block;
+    text-decoration: none;
+    color: hsl(179, 100%, 13%);
+    background: white;
+    border-radius: 5em;
+    padding: 1em 1.5em;
+    margin-top: 4em;
+}
+
+.card-three .btn:hover{
+    border: 2px solid white;
+    color: white;
+    background: hsl(179, 100%, 13%);
+}
+
+.attribution{
+    font-size: 11px;
+    color: black;
+    padding-bottom: 3em;
+}
+
+.attribution a{
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 780px) {
+    .card-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 375px;
+        margin: 5em auto;
+    }
+
+    .card-one{
+        border-radius: .5em .5em 0 0;
+    }
+
+    .card-three{
+        border-radius: 0 0 .5em .5em;
+    }
+
+    .card .btn{
+        margin-top: 1em;
+    }
+}
